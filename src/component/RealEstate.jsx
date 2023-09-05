@@ -1,35 +1,35 @@
 import React from 'react'
 export const Details = [
   {
-    imageUrl: '../../src/assets/realestate.jpg',
+    imageUrl: '/images/realestate.jpg',
     title: 'REAL ESTATE'
   },
   {
-    imageUrl: '../../src/assets/car.jpg',
+    imageUrl: '/images/car.jpg',
     title: 'CARS'
   },
   {
-    imageUrl: '../../src/assets/yatch.jpg',
+    imageUrl: '/images/yatch.jpg',
     title: 'YATCHS'
   },
   {
-    imageUrl: '../../src/assets/watch.jpg',
+    imageUrl: '/images/watch.jpg',
     title: 'WATCHES'
   },
   {
-    imageUrl: '../../src/assets/plane.jpg',
+    imageUrl: '/images/plane.jpg',
     title: 'JETS'
   },
   {
-    imageUrl: '../../src/assets/island.jpg',
+    imageUrl: '/images/island.jpg',
     title: 'PRIVATE ISLANDS'
   },
   {
-    imageUrl: '../../src/assets/diamond.jpg',
+    imageUrl: '/images/diamond.jpg',
     title: 'DIAMONDS'
   },
   {
-    imageUrl: '../../src/assets/travel.jpg',
+    imageUrl: '/images/travel.jpg',
     title: 'TRAVEL THE WORLD'
   },
 
@@ -50,7 +50,7 @@ const RealEstate = () => {
 
               <h4 className="text-[40px] uppercase text-white opacity-50 tracking-wider text-center " >{item.title}</h4>
               {index == '1' &&<div class=" absolute car-models w-80 md:w-96 right-7 bottom-5">
-                <img src="../../src/assets/cars-model.png" alt=""/>
+                <img src="/images/cars-model.png" alt=""/>
 
                 </div>}
             </div>

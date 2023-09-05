@@ -4,17 +4,17 @@ const Terms = () => {
   return (
     <div>
       <div className="z-20 overflow-y-auto inset-0 bg-black text-white py-8 px-2 lg:px-4 select-text overflow-hidden" style={{ opacity: 1, transform: 'none' }}>
-        <img className="absolute z-30 right-6 top-8 cursor-pointer" src="../../src/assets/close.png" alt="" />
+        <img className="absolute z-30 right-6 top-8 cursor-pointer" src="/images/close.png" alt="" />
         <main className="mx-auto px-2" style={{ maxWidth: '2500px' }}>
           <a href="/">
-            <img src="../../src/assets/logo2-white.png" className="block h-[30px] mx-auto mt-16" />
+            <img src="/images/logo2-white.png" className="block h-[30px] mx-auto mt-16" />
           </a>
           <h2 className="text-center text-[20px] mt-16 tracking-widest">
             TERMS OF SERVICE
           </h2>
           <div className="mt-16 gap-8 grid xl:grid-cols-[332px_1fr_2px_1fr] text-[12px]">
             <div className="self-center">
-              <img src="../../src/assets/zimo-group.png" className="max-w-[332px]" />
+              <img src="/images/zimo-group.png" className="max-w-[332px]" />
             </div>
             <section className="flex flex-col gap-6">
               <p>Welcome to www.zimogroup.org (the "Site"), a website provided by ZIMO GROUP LIMITED, the parent company of ZIMO ("Company"). Your use of the Site is at all times subject to the following terms and conditions, and you are deemed to have accepted these terms of service upon using the Site. You should review these terms of service carefully, and be sure you understand them, prior to using the Site. If you do not agree to these terms of service, you must immediately exit the Site.

@@ -1,7 +1,7 @@
 import React from 'react'
-import Image from '../assets/zimo.png'
-import ZimoGroup from '../assets/zimoGroupDark.png';
-import Arrow from '../assets/ArrowDark.png';
+import Image from '/images/zimo.png'
+import ZimoGroup from '/images/zimoGroupDark.png';
+import Arrow from '/images/ArrowDark.png';
 
 
 const Main = () => {

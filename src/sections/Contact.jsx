@@ -1,7 +1,7 @@
 import React from 'react'
-import weblogo from '../../src/assets/web-logo.svg'
-import mailogo from '../../src/assets/mail-logo.svg'
-import qrcode from '../../src/assets/qr.svg'
+import weblogo from '/images/web-logo.svg'
+import mailogo from '/images/mail-logo.svg'
+import qrcode from '/images/qr.svg'
 const Contact = () =>{
   return (
     <>

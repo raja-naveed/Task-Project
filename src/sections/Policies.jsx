@@ -1,5 +1,5 @@
 import React from "react";
-import close from '../../src/assets/close.png'
+import close from '/images/close.png'
 const Policies = () => {
   return (
     <div
@@ -14,7 +14,7 @@ const Policies = () => {
       <main className="mx-auto" style={{ maxWidth: "2500px" }}>
         <a href="/">
           <img
-            src="../../src/assets/logo2-white.png"
+            src="/images/logo2-white.png"
             className="block h-[30px] mx-auto mt-16"
           />
         </a>
@@ -28,7 +28,7 @@ const Policies = () => {
         <div className="mt-8 gap-8 grid xl:grid-cols-[332px_1fr_2px_1fr] text-[12px]">
           <div className="self-center">
             <img
-              src="../../src/assets/zimo-group.png"
+              src="/images/zimo-group.png"
               className="max-w-[332px]"
             />
           </div>

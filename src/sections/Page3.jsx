@@ -1,6 +1,6 @@
 import React from 'react'
-import Image from '../assets/zimo.png'
-import zimoblack from '../assets/zimo-logo-2.png'
+import Image from '/images/zimo.png'
+import zimoblack from '/images/zimo-logo-2.png'
 const Page3 = () => {
   return (
     <div className="w-full min-h-screen flex justify-center items-center text-center">

@@ -1,6 +1,6 @@
 import React from 'react'
-import Services from '../assets/services.png'
-import ZimoGroup from '../assets/zimo-group.png'
+import Services from '/images/services.png'
+import ZimoGroup from '/images/zimo-group.png'
 const Group = () => {
   return (
     <div className='bg-black'>

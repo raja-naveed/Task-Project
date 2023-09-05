@@ -1,7 +1,7 @@
 import React from 'react'
-import Zodiac from '../assets/zdoc.png'
-import Zidoc from '../assets/zidoc.png'
-import Signature from '../assets/signatures.png'
+import Zodiac from '/images/zdoc.png'
+import Zidoc from '/images/zidoc.png'
+import Signature from '/images/signatures.png'
 
 const Signpage = () => {
   return (

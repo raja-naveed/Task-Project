@@ -1,6 +1,6 @@
 import React from 'react'
-import Zimo from '../assets/zimo-logo.png'
-import ZimoPro from '../assets/zimo-pro.png'
+import Zimo from '/images/zimo-logo.png'
+import ZimoPro from '/images/zimo-pro.png'
 
 const Revolutionary = () => {
   return (

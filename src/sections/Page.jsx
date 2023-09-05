@@ -1,5 +1,5 @@
 import React from 'react'
-import Image from '../assets/logo2-white.png'
+import Image from '/images/logo2-white.png'
 const Page = () => {
   return (
     <div className="bg-black h-screen flex flex-col justify-center items-center   relative text-white ">
