@@ -1,28 +1,80 @@
-import React from 'react'
-import Zimo from '/images/zimo-logo.png'
-import ZimoPro from '/images/zimo-pro.png'
+import React from "react";
+import Zimo from "/images/zimo-logo.png";
+import ZimoPro from "/images/zimo-pro.png";
+import { fadeIn } from "../utils/motion";
+import { motion } from "framer-motion";
 
 const Revolutionary = () => {
+  const expandFromMiddle = {
+    hidden: { scaleY: 0, originY: 0.5 },
+    show: { scaleY: 1, originY: 0.5, transition: { duration: 1.5 } },
+  };
+  const rotateUpwards = {
+    hidden: { rotateX: -90, opacity: 0 },
+    show: { rotateX: 0, opacity: 1, transition: { duration: 1 } },
+  };
+
   return (
-    <div className='flex min-h-screen flex-col justify-center py-8'>
-      <p className="text-[30px] text-center tracking-wider">REVOLUTIONARY</p>
-      <div className="container mx-auto flex flex-col md:flex-row my-8 gap-8 justify-around items-center">
-        <img src={Zimo} alt="zimo" className="w-52 md:w-72" />
-        <div
-          style={{
-            borderLeft: '1px solid #BE9F56',
-            borderTop: '1px solid #BE9F56'
-          }}
-          className="h-0 w-52 md:h-[250px] md:w-0 opacity-50"
-        />
-        <img src={ZimoPro} alt="zimo pro" className="w-52 md:w-72" />
-
+    <div className="section">
+      <div className="flex min-h-screen flex-col justify-center py-8">
+        <motion.p
+          variants={fadeIn("down", 0.1)}
+          initial="hidden"
+          whileInView="show"
+          exit="hidden"
+          className="text-[30px] text-center tracking-wider"
+        >
+          REVOLUTIONARY
+        </motion.p>
+        <div className="container mx-auto flex flex-col md:flex-row my-8 gap-8 justify-around items-center">
+          <motion.img
+            src={Zimo}
+            alt="zimo"
+            className="w-52 md:w-72"
+            initial="hidden"
+            whileInView="show"
+            variants={rotateUpwards}
+          />
+          <motion.div
+            style={{
+              borderLeft: "1px solid #BE9F56",
+              borderTop: "1px solid #BE9F56",
+            }}
+            initial="hidden"
+            whileInView="show"
+            variants={expandFromMiddle}
+            className="h-0 w-52 md:h-[250px] md:w-0 opacity-50"
+          />
+          <motion.img
+            src={ZimoPro}
+            alt="zimo pro"
+            className="w-52 md:w-72"
+            initial="hidden"
+            whileInView="show"
+            variants={rotateUpwards}
+          />
+        </div>
+        <motion.p
+          variants={fadeIn("up", 0.1)}
+          initial="hidden"
+          whileInView="show"
+          exit="hidden"
+          className="text-center text-[30px] tracking-wider"
+        >
+          The only platform of it's kind in the world.
+        </motion.p>
+        <a className="navigate">
+          <img
+            src="/images/ArrowDark.png"
+            alt="arrow-dark"
+            height={80}
+            width={40}
+            className="cursor-pointer z-10 hover:scale-150 hover:brightness-100 animate-bounce hover:animate-ping"
+          />
+        </a>
       </div>
-      <p className="text-center text-[30px] tracking-wider">The only platform of it's kind in the world.</p>
-
-
     </div>
-  )
-}
+  );
+};
 
 export default Revolutionary;

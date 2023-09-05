@@ -1,21 +1,42 @@
-import React from 'react'
-import Image from '/images/zimo.png'
-import zimoblack from '/images/zimo-logo-2.png'
+import React from "react";
+import Image from "/images/zimo.png";
+import zimoblack from "/images/zimo-logo-2.png";
+import { motion } from "framer-motion";
 const Page3 = () => {
+  const expandAnimation = {
+    hidden: { scale: 0.2, opacity: 0 },
+    visible: { scale: 1, opacity: 1, transition: { duration: 1 } },
+  };
   return (
-    <div className="w-full min-h-screen flex justify-center items-center text-center">
-
-      <img src={Image} alt="" className="sm:w-[800px] sm:h-[200px] w-[1600px] h-[488px] absolute -translate-x-[50%] -translate-y-[50%] top-[50%] bottom-[50%] right-[50%] left-[50%] blur-lg" />
-      <div>
-        <h2 className="text-[25px] font-normal uppercase tracking-wider">
-          Bringing the world closer together.
-        </h2>
-        <img className="block mx-auto mt-6" src={zimoblack} alt="" />
-
+    <div className="section">
+      <div className="w-full min-h-screen flex justify-center items-center text-center">
+        <img
+          src={Image}
+          alt=""
+          className="sm:w-[800px] sm:h-[200px] w-[1600px] h-[488px] absolute -translate-x-[50%] -translate-y-[50%] top-[50%] bottom-[50%] right-[50%] left-[50%] blur-lg"
+        />
+        <motion.div
+          initial="hidden"
+          whileInView="visible"
+          variants={expandAnimation}
+        >
+          <h2 className="text-[25px] font-normal uppercase tracking-wider">
+            Bringing the world closer together.
+          </h2>
+          <img className="block mx-auto mt-6" src={zimoblack} alt="" />
+        </motion.div>
+        <a className="navigate">
+          <img
+            src="/images/down-arrow.png"
+            alt="arrow-dark"
+            height={80}
+            width={40}
+            className="cursor-pointer z-10 hover:scale-150 hover:brightness-100 animate-bounce hover:animate-ping"
+          />
+        </a>
       </div>
-
     </div>
-  )
-}
+  );
+};
 
-export default Page3
+export default Page3;

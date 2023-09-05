@@ -2,8 +2,8 @@ import React from 'react'
 
 const Terms = () => {
   return (
-    <div>
-      <div className="z-20 overflow-y-auto inset-0 bg-black text-white py-8 px-2 lg:px-4 select-text overflow-hidden" style={{ opacity: 1, transform: 'none' }}>
+    <div className='section bg-black'>
+      <div className="z-20 overflow-y-auto inset-0  text-white py-8 px-2 lg:px-4 select-text overflow-hidden" style={{ opacity: 1, transform: 'none' }}>
         <img className="absolute z-30 right-6 top-8 cursor-pointer" src="/images/close.png" alt="" />
         <main className="mx-auto px-2" style={{ maxWidth: '2500px' }}>
           <a href="/">

@@ -4,7 +4,7 @@ import mailogo from '/images/mail-logo.svg'
 import qrcode from '/images/qr.svg'
 const Contact = () =>{
   return (
-    <>
+    <div className='section'>
     <div className="max-w-[1600px] mx-auto px-1 md:px-2 py-4 pt-8" style={{ userSelect: 'text' }}>
         <section className="block lg:hidden mb-8 " >
         <h2 className="text-center uppercase tracking-widest text-[20px]">
@@ -203,7 +203,7 @@ const Contact = () =>{
         <img src="../../src/assets/zimo-black.png"  alt="" className=""/>
         </div>
     </div>
-    </>
+    </div>
 
   )
 }

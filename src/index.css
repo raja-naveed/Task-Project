@@ -5,3 +5,20 @@
 body{
   font-family: 'Lato', sans-serif;
 }
+.navigate{
+  position: absolute;
+  z-index: 10;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0;
+  padding: 1rem;
+  transition: all .5s ease;
+}
+
+.section{
+  position: relative;
+  min-height: 100vh;
+  overflow: hidden;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
