@@ -2,26 +2,14 @@ import React from "react";
 import { motion } from "framer-motion";
 
 const Download = () => {
-  const swipingRotation = {
-    rotating: {
-      rotate: 360, // Rotate 360 degrees (one full rotation)
-      transition: {
-        duration: 2, // Adjust the duration as needed
-        ease: "linear", // Linear easing for a smooth continuous rotation
-      },
-    },
-  };
+
   return (
-    <div className="section">
+    <div className="section" id="section10">
       <div className="container mx-auto flex flex-col justify-between items-center min-h-screen gap-8">
         <div>&nbsp;</div>
         <div className="flex justify-between gap-8 lg:gap-0 flex-col lg:flex-row lg:items-center">
           <div className="w-[250px] 2xl:w-[400px] 3xl:w-[549px] flex justify-between mx-auto gap-x-16">
-            <motion.img
-              whileInView="rotating"
-              variants={swipingRotation}
-              initial={{ rotate: 0 }} // Start from no rotation
-              transition={{ loop: Infinity }} // Infinite loop
+            <img
               className="w-[120px] 2xl:w-[192px] 3xl:w-[246px]"
               src="/images/react.svg"
               alt=""

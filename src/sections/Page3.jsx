@@ -7,12 +7,19 @@ const Page3 = () => {
     hidden: { scale: 0.2, opacity: 0 },
     visible: { scale: 1, opacity: 1, transition: { duration: 1 } },
   };
+  const imageAnimation = {
+    hidden: { opacity: 0 },
+    visible: { opacity: 1, transition: { duration: 4 } },
+  };
   return (
-    <div className="section">
+    <div className="section" id="section8">
       <div className="w-full min-h-screen flex justify-center items-center text-center">
-        <img
+        <motion.img
           src={Image}
           alt=""
+          initial="hidden"
+          whileInView="visible"
+          variants={imageAnimation}
           className="sm:w-[800px] sm:h-[200px] w-[1600px] h-[488px] absolute -translate-x-[50%] -translate-y-[50%] top-[50%] bottom-[50%] right-[50%] left-[50%] blur-lg"
         />
         <motion.div
@@ -23,7 +30,9 @@ const Page3 = () => {
           <h2 className="text-[25px] font-normal uppercase tracking-wider">
             Bringing the world closer together.
           </h2>
-          <img className="block mx-auto mt-6" src={zimoblack} alt="" />
+          <img 
+          className="block mx-auto mt-6" src={zimoblack} alt="" 
+          />
         </motion.div>
         <a className="navigate">
           <img

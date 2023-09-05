@@ -1,6 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { fadeIn } from "./../utils/motion";
+import Terms from "./Terms";
 
 const ThankYou = () => {
   const imageAnimation = {
@@ -8,7 +9,7 @@ const ThankYou = () => {
     visible: { opacity: 1, transition: { duration: 4 } },
   };
   return (
-    <div className="section" style={{ backgroundColor: "rgba(0,0,0,0.3)" }}>
+    <div className="section" id="section12" style={{ backgroundColor: "rgba(0,0,0,0.3)" }}>
       <div className="container mx-auto flex flex-col h-screen items-center justify-center">
         <div className="">
           <motion.img

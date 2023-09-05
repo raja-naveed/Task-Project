@@ -1,5 +1,5 @@
 import React from "react";
-import { slideIn } from './../utils/motion';
+import { slideIn } from "./../utils/motion";
 import { motion } from "framer-motion";
 export const Details = [
   {
@@ -38,7 +38,7 @@ export const Details = [
 
 const RealEstate = () => {
   return (
-    <div className="section">
+    <div className="section" id="section5">
       {Details.map((item, index) => {
         return (
           <div className="relative" key={index}>
@@ -48,18 +48,25 @@ const RealEstate = () => {
             >
               <div className="absolute inset-0 bg-black opacity-50"></div>
 
-              <motion.h4 
-              variants={slideIn ("left", 0.1)}
-              initial="hidden"
-              whileInView="show"
-              exit="hidden"
-              className="text-[40px] uppercase text-white opacity-50 tracking-wider text-center ">
+              <motion.h4
+                variants={slideIn("left", 0.1)}
+                initial="hidden"
+                whileInView="show"
+                exit="hidden"
+                className="text-[40px] uppercase text-white opacity-50 tracking-wider text-center "
+              >
                 {item.title}
               </motion.h4>
               {index == "1" && (
-                <div class=" absolute car-models w-80 md:w-96 right-7 bottom-5">
+                <motion.div
+                  variants={slideIn("up", 0.1)}
+                  initial="hidden"
+                  whileInView="show"
+                  exit="hidden"
+                  class=" absolute car-models w-80 md:w-96 right-7 bottom-5"
+                >
                   <img src="/images/cars-model.png" alt="" />
-                </div>
+                </motion.div>
               )}
             </div>
             <a className="navigate">

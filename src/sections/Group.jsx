@@ -1,6 +1,5 @@
 import React from "react";
 import Services from "/images/services.png";
-import ZimoGroup from "/images/zimo-group.png";
 import { motion } from "framer-motion";
 const Group = () => {
   const zoomInAnimation = {
@@ -8,7 +7,7 @@ const Group = () => {
     animate: { scale: 1, opacity: 1, transition: { duration: 1 } },
   };
   return (
-    <div className="section bg-black relative">
+    <div className="section bg-black relative" id="section4">
       <div className="container mx-auto min-h-screen py-8 relative h-[80vh] overflow-hidden">
         <motion.div
           variants={zoomInAnimation}

@@ -2,11 +2,9 @@ import React from "react";
 import Image from "/images/logo2-white.png";
 import { motion } from "framer-motion";
 import { fadeIn } from "../utils/motion";
-
 const Page = () => {
   return (
-    <div className="bg-black section">
-      {" "}
+    <div className="bg-black section" id="section2">
       <div className=" h-screen flex flex-col justify-center items-center   relative text-white ">
         <div className="container mx-auto flex flex-col justify-center gap-8 xl:flex-row items-center min-h-screen py-16 relative">
           <motion.img

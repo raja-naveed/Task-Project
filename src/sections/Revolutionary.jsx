@@ -15,7 +15,7 @@ const Revolutionary = () => {
   };
 
   return (
-    <div className="section">
+    <div className="section" id="section3">
       <div className="flex min-h-screen flex-col justify-center py-8">
         <motion.p
           variants={fadeIn("down", 0.1)}

@@ -7,8 +7,8 @@ import { fadeIn, slideIn } from "../utils/motion";
 
 const Signpage = () => {
   return (
-    <div className="section">
-      <div class="container mx-auto min-h-screen flex flex-col justify-between mt-[40px]">
+    <div className="section" id="section6">
+      <div className="container mx-auto min-h-screen flex flex-col justify-between">
         <div>
           <motion.img
             variants={fadeIn("down", 0.1)}
@@ -16,7 +16,7 @@ const Signpage = () => {
             whileInView="show"
             exit="hidden"
             src={Zodiac}
-            className="block mx-auto items-center "
+            className="block mx-auto items-center mt-[300px] "
             alt="zdoc."
           />
         </div>
@@ -31,7 +31,7 @@ const Signpage = () => {
             Document-signing software technology that lets you sign documents
             online.
           </p>
-          <div class="w-[300px] ml-auto mt-8">
+          <div class="w-[300px] ml-auto mt-16">
             <div class="flex justify-between border-[rgba(0,0,0,0.4)] border-b border-solid pb-2">
               <img src={Zidoc} alt="zdoc" className="h-[60px] w-[45px]" />
               <img src={Signature} alt="zdoc" className="h-[90px] w-[200px]" />
@@ -41,6 +41,7 @@ const Signpage = () => {
             </small>
           </div>
         </motion.div>
+        </div>
         <a className="navigate">
           <img
             src="/images/down-arrow.png"
@@ -50,7 +51,7 @@ const Signpage = () => {
             className="cursor-pointer z-10 hover:scale-150 hover:brightness-100 animate-bounce hover:animate-ping"
                    />
         </a>
-      </div>
+      
     </div>
   );
 };
