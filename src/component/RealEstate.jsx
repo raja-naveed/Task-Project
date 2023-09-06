@@ -38,7 +38,7 @@ export const Details = [
 
 const RealEstate = () => {
   return (
-    <div className="section" id="section5">
+    <div className="" id="section5">
       {Details.map((item, index) => {
         return (
           <div className="relative" key={index}>

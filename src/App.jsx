@@ -22,7 +22,7 @@ const App = () => {
       <Page />
       <Revolutionary/>
       <Group/>
-      <Screens/>
+      <RealEstate/>
       <Signpage/>
       <Page2 text={`A REAL ESTATE AND PROPERTY PLATFORM THAT WILL CHANGE THE WORLD.`} section={`section7`}/>
       <Page3/>
