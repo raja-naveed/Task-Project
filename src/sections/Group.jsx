@@ -1,22 +1,22 @@
 import React from "react";
 import Services from "/images/services.svg";
 import { motion } from "framer-motion";
-import { Link } from 'react-scroll';
+import { Link } from "react-scroll";
 const Group = () => {
   const zoomInAnimation = {
     initial: { scale: 0.8, opacity: 0 },
     animate: { scale: 1, opacity: 1, transition: { duration: 1 } },
   };
   return (
-    <div className="section bg-black relative" id="section4">
-      <div className="container mx-auto min-h-screen py-8 relative h-[80vh] overflow-hidden">
+    <div className="section bg-black " id="section4">
+      <div className="container mx-auto min-h-screen py-8 relative ">
         <motion.div
           variants={zoomInAnimation}
           initial="initial"
           whileInView="animate"
-          className="services h-[80vh] overflow-hidden"
+          className="services overflow-y-auto "
         >
-          <img src={Services} alt="" />
+          <img src={Services} alt="" className="object-contain " />
         </motion.div>
         <img
           src="/images/zimo-group.png"
@@ -29,7 +29,14 @@ const Group = () => {
             transform: "translate(-50%, -50%)",
           }}
         />
-      <Link to="sectionn1" spy={true} smooth={true} offset={50} duration={500} className="navigate">      
+        <Link
+          to="sectionn1"
+          spy={true}
+          smooth={true}
+          offset={50}
+          duration={500}
+          className="navigate"
+        >
           <img
             src="/images/down-arrow.png"
             alt="arrow-dark"
