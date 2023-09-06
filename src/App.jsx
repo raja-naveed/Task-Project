@@ -26,12 +26,12 @@ const App = () => {
       <Signpage/>
       <Page2 text={`A REAL ESTATE AND PROPERTY PLATFORM THAT WILL CHANGE THE WORLD.`} section={`section7`}/>
       <Page3/>
-      <Page2 text={`GLOBAL ACCESS TO REAL ESTATE AND PROPERTY TO EVERYONE .`} section={`section8`}/>
+      <Page2 text={`GLOBAL ACCESS TO REAL ESTATE AND PROPERTY TO EVERYONE .`} section={`section9`}/>
       <Download/>
       <Email/>
       <ThankYou/>
-      <Terms/>
-      <Policies/>
+      {/* <Terms/> */}
+      {/* <Policies/> */}
       <Contact/>
 
     </div>

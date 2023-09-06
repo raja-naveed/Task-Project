@@ -1,6 +1,6 @@
 import React from "react";
 import close from "/images/close.png";
-const Policies = () => {
+const Policies = ({closePolicyPopup}) => {
   return (
     <div className="section bg-black">
       <div
@@ -11,6 +11,7 @@ const Policies = () => {
           className="absolute z-30 right-6 top-8 cursor-pointer"
           src={close}
           alt=""
+          onClick={closePolicyPopup}
         />
         <main className="mx-auto" style={{ maxWidth: "2500px" }}>
           <a href="/">
