@@ -9,7 +9,7 @@ const Email = () => {
   };
 
   return (
-    <div className="section bg-black">
+    <div className="section bg-black" id="section11">
       <div className="h-screen flex flex-col justify-center items-center relative">
         <motion.img
           src={Image}

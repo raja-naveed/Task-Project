@@ -11,7 +11,10 @@ const Policies = ({closePolicyPopup}) => {
           className="absolute z-30 right-6 top-8 cursor-pointer"
           src={close}
           alt=""
-          onClick={closePolicyPopup}
+          onClick={() => {
+            closePolicyPopup();
+            document.getElementById("section12").scrollIntoView();
+          }}
         />
         <main className="mx-auto" style={{ maxWidth: "2500px" }}>
           <a href="/">

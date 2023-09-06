@@ -43,7 +43,7 @@ const RealEstate = () => {
         return (
           <div className="relative" key={index}>
             <div
-              className="min-h-screen flex flex-col justify-center xl:text-center items-center relative px-8 bg-black bg-no-repeat bg-center bg-cover text-white "
+              className="min-h-screen flex flex-col justify-center xl:text-center items-center relative px-8 bg-black bg-no-repeat bg-fixed bg-center bg-cover text-white "
               style={{ backgroundImage: `url(${item.imageUrl})` }}
             >
               <div className="absolute inset-0 bg-black opacity-50"></div>

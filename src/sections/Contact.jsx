@@ -6,12 +6,12 @@ import { fadeIn, slideIn } from "../utils/motion";
 import { motion } from "framer-motion";
 const Contact = () => {
   return (
-    <div className="section " id="section13">
+    <div className="section" id="section13">
       <div
         className="mx-auto px-1 md:px-2 py-4 pt-8"
         style={{ userSelect: "text" }}
       >
-        <section className="block lg:hidden mb-8 ">
+        <section className="block mb-8 ">
           <motion.h2
             variants={fadeIn("down", 0.1)}
             initial="hidden"
@@ -84,8 +84,7 @@ const Contact = () => {
               </div>
             </motion.div>
             <motion.p
-              variants={fadeIn("up", 0.5)}
-              initial="hidden"
+              variants={fadeIn("up", 0.1)}
               whileInView="show"
               exit="hidden"
               className="tracking-widest text-[11px]"
@@ -96,7 +95,7 @@ const Contact = () => {
               London, WC2H 9JQ, England, United Kingdom.
             </motion.p>
           </section>
-          <section className="hidden lg:block ">
+          <section className="lg:block ">
             <motion.h2
               variants={fadeIn("down", 0.1)}
               initial="hidden"

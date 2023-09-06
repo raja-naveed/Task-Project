@@ -5,7 +5,12 @@ const Terms = ({closeTermsPopup}) => {
   return (
     <div className='section bg-black'>
       <div className="z-100 overflow-y-auto inset-0  text-white py-8 px-2 lg:px-4 select-text overflow-hidden" style={{ opacity: 1, transform: 'none' }}>
-        <img onClick={closeTermsPopup} className="absolute z-30 right-6 top-8 cursor-pointer" src="/images/close.png" alt="" />
+        <img 
+        onClick={() => {
+          closeTermsPopup();
+          document.getElementById("section12").scrollIntoView();
+        }}
+        className="absolute z-30 right-6 top-8 cursor-pointer" src="/images/close.png" alt="" />
         <main className="mx-auto px-2" style={{ maxWidth: '2500px' }}>
           <a href="/">
             <img src="/images/logo2-white.png" className="block h-[30px] mx-auto mt-16" />

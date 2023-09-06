@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Main from './sections/Main';
 import Page from './sections/Page';
 import Revolutionary from './sections/Revolutionary';
@@ -16,23 +16,33 @@ import Contact from './sections/Contact';
 import Screens from './sections/Screens';
 
 const App = () => {
+  const [show, setShow] = useState(true);
   return (
-    <div>
-      <Main />
-      <Page />
-      <Revolutionary/>
-      <Group/>
-      <RealEstate/>
-      <Signpage/>
-      <Page2 text={`A REAL ESTATE AND PROPERTY PLATFORM THAT WILL CHANGE THE WORLD.`} section={`section7`}/>
-      <Page3/>
-      <Page2 text={`GLOBAL ACCESS TO REAL ESTATE AND PROPERTY TO EVERYONE .`} section={`section9`}/>
-      <Download/>
-      <Email/>
-      <ThankYou/>
+    <div >
+        { show && (
+            <>
+              <Main/>
+              <Page />
+              <Revolutionary/>
+              <Group/>
+              <RealEstate/>
+              <Signpage/>
+              <Page2 text={`A REAL ESTATE AND PROPERTY PLATFORM THAT WILL CHANGE THE WORLD.`} section={`section7`}/>
+              <Page3/>
+              <Page2 text={`GLOBAL ACCESS TO REAL ESTATE AND PROPERTY TO EVERYONE .`} section={`section9`}/>
+              <Download/>
+              <Email/>
+            </>
+      )}
+      <ThankYou setShow={setShow}/>      
       {/* <Terms/> */}
       {/* <Policies/> */}
-      <Contact/>
+      
+      { show && (
+            <>        
+              <Contact/>
+            </>
+      )}
 
     </div>
   )
