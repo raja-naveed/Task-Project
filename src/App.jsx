@@ -18,7 +18,7 @@ import Screens from './sections/Screens';
 const App = () => {
   const [show, setShow] = useState(true);
   return (
-    <div >
+    < >
         { show && (
             <>
               <Main/>
@@ -44,7 +44,7 @@ const App = () => {
             </>
       )}
 
-    </div>
+    </>
   )
 }
 

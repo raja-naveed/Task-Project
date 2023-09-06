@@ -2,6 +2,7 @@ import React from "react";
 import Image from "/images/logo2-white.png";
 import { motion } from "framer-motion";
 import { fadeIn } from "../utils/motion";
+import { Link } from 'react-scroll';
 const Page = () => {
   return (
     <div className="bg-black section" id="section2">
@@ -28,7 +29,7 @@ const Page = () => {
             </p>
           </motion.div>
         </div>
-        <a className="navigate">
+        <Link to="section3" spy={true} smooth={true} offset={50} duration={500} className="navigate">      
           <img
             src="/images/down-arrow.png"
             alt="arrow-dark"
@@ -36,7 +37,7 @@ const Page = () => {
             width={40}
             className="cursor-pointer z-10 hover:scale-150 hover:brightness-100 animate-bounce hover:animate-ping"
             style={{ filter: 'brightness(0) invert(1)' }}          />
-        </a>
+        </Link>
       </div>
     </div>
   );

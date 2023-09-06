@@ -3,6 +3,7 @@ import Zimo from "/images/zimo-logo.png";
 import ZimoPro from "/images/zimo-pro.png";
 import { fadeIn } from "../utils/motion";
 import { motion } from "framer-motion";
+import { Link } from 'react-scroll';
 
 const Revolutionary = () => {
   const expandFromMiddle = {
@@ -63,7 +64,7 @@ const Revolutionary = () => {
         >
           The only platform of it's kind in the world.
         </motion.p>
-        <a className="navigate">
+        <Link to="section4" spy={true} smooth={true} offset={50} duration={500} className="navigate">      
           <img
             src="/images/ArrowDark.png"
             alt="arrow-dark"
@@ -71,7 +72,7 @@ const Revolutionary = () => {
             width={40}
             className="cursor-pointer z-10 hover:scale-150 hover:brightness-100 animate-bounce hover:animate-ping"
           />
-        </a>
+        </Link>
       </div>
     </div>
   );

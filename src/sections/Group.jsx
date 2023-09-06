@@ -1,6 +1,7 @@
 import React from "react";
-import Services from "/images/services.png";
+import Services from "/images/services.svg";
 import { motion } from "framer-motion";
+import { Link } from 'react-scroll';
 const Group = () => {
   const zoomInAnimation = {
     initial: { scale: 0.8, opacity: 0 },
@@ -13,7 +14,7 @@ const Group = () => {
           variants={zoomInAnimation}
           initial="initial"
           whileInView="animate"
-          className="services"
+          className="services h-[80vh] overflow-hidden"
         >
           <img src={Services} alt="" />
         </motion.div>
@@ -28,7 +29,7 @@ const Group = () => {
             transform: "translate(-50%, -50%)",
           }}
         />
-        <a className="navigate">
+      <Link to="section5" spy={true} smooth={true} offset={50} duration={500} className="navigate">      
           <img
             src="/images/down-arrow.png"
             alt="arrow-dark"
@@ -37,7 +38,7 @@ const Group = () => {
             className="cursor-pointer z-10 hover:scale-150 hover:brightness-100 animate-bounce hover:animate-ping"
             style={{ filter: "brightness(0) invert(1)" }}
           />
-        </a>
+        </Link>
       </div>
     </div>
   );

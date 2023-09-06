@@ -4,6 +4,7 @@ import ZimoGroup from "/images/zimoGroupDark.png";
 import Arrow from "/images/ArrowDark.png";
 import { motion } from "framer-motion";
 import { fadeIn, fadeInn } from "../utils/motion";
+import { Link } from "react-scroll";
 
 const Main = () => {
   const imageAnimation = {
@@ -32,7 +33,8 @@ const Main = () => {
         <img src={ZimoGroup} alt="" className="md:w-[380px] w-[420px] pl-4" />
       </motion.div>
       <div className="arrow space-y-14 flex flex-col items-center justify-center sm:absolute sm:bottom-0 sm:right-0 sm:left-0 pb-8">
-        <a href="#section2" className="navigate">
+
+      <Link to="section2" spy={true} smooth={true} offset={50} duration={500} className="navigate">      
           <img
             src={Arrow}
             alt="arrow-dark"
@@ -40,7 +42,7 @@ const Main = () => {
             width={40}
             className="cursor-pointer hover:scale-150 animate-bounce hover:animate-ping "
           />
-        </a>
+        </Link>
       </div>
     </div>
     </div>
