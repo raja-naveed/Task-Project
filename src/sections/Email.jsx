@@ -1,7 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
 import Image from "/images/logo2-white.png";
-import { Link } from 'react-scroll';
 
 const Email = () => {
   const imageAnimation = {
@@ -28,14 +27,8 @@ const Email = () => {
             EMAIL
           </h2>
         </div>
-        <Link
-          to="section12"
-          spy={true}
-          smooth={true}
-          offset={50}
-          duration={500}
-          className="navigate"
-        >          <img
+        <a className="navigate">
+          <img
             src="/images/down-arrow.png"
             alt="arrow-dark"
             height={80}
@@ -43,7 +36,7 @@ const Email = () => {
             className="cursor-pointer z-10 hover:scale-150 hover:brightness-100 animate-bounce hover:animate-ping"
             style={{ filter: "brightness(0) invert(1)" }}
           />
-        </Link>
+        </a>
       </div>
     </div>
   );
