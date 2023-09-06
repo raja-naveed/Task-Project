@@ -29,7 +29,7 @@ const Group = () => {
             transform: "translate(-50%, -50%)",
           }}
         />
-      <Link to="section5" spy={true} smooth={true} offset={50} duration={500} className="navigate">      
+      <Link to="sectionn1" spy={true} smooth={true} offset={50} duration={500} className="navigate">      
           <img
             src="/images/down-arrow.png"
             alt="arrow-dark"

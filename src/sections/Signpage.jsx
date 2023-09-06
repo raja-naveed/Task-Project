@@ -4,6 +4,7 @@ import Zidoc from "/images/zidoc.png";
 import Signature from "/images/signatures.png";
 import { motion } from "framer-motion";
 import { fadeIn, slideIn } from "../utils/motion";
+import { Link } from "react-scroll";
 
 const Signpage = () => {
   return (
@@ -41,17 +42,23 @@ const Signpage = () => {
             </small>
           </div>
         </motion.div>
-        </div>
-        <a className="navigate">
-          <img
-            src="/images/down-arrow.png"
-            alt="arrow-dark"
-            height={80}
-            width={40}
-            className="cursor-pointer z-10 hover:scale-150 hover:brightness-100 animate-bounce hover:animate-ping"
-                   />
-        </a>
-      
+      </div>
+      <Link
+        to="section7"
+        spy={true}
+        smooth={true}
+        offset={50}
+        duration={500}
+        className="navigate"
+      >
+        <img
+          src="/images/down-arrow.png"
+          alt="arrow-dark"
+          height={80}
+          width={40}
+          className="cursor-pointer z-10 hover:scale-150 hover:brightness-100 animate-bounce hover:animate-ping"
+        />
+      </Link>
     </div>
   );
 };

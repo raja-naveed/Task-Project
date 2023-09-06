@@ -27,9 +27,9 @@ const App = () => {
               <Group/>
               <RealEstate/>
               <Signpage/>
-              <Page2 text={`A REAL ESTATE AND PROPERTY PLATFORM THAT WILL CHANGE THE WORLD.`} section={`section7`}/>
+              <Page2 text={`A REAL ESTATE AND PROPERTY PLATFORM THAT WILL CHANGE THE WORLD.`} section={`section7`} navigate={`section8`}/>
               <Page3/>
-              <Page2 text={`GLOBAL ACCESS TO REAL ESTATE AND PROPERTY TO EVERYONE .`} section={`section9`}/>
+              <Page2 text={`GLOBAL ACCESS TO REAL ESTATE AND PROPERTY TO EVERYONE .`} section={`section9`}  navigate={`section10`}/>
               <Download/>
               <Email/>
             </>

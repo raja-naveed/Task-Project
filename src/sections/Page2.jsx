@@ -1,7 +1,8 @@
 import React from "react";
 import { motion } from "framer-motion";
+import { Link } from "react-scroll";
 
-const Page2 = ({ text, section }) => {
+const Page2 = ({ text, section, navigate }) => {
   const rotateUpwards = {
     hidden: { rotateX: -90, opacity: 0 },
     show: { rotateX: 0, opacity: 1, transition: { duration: 1 } },
@@ -17,16 +18,24 @@ const Page2 = ({ text, section }) => {
         >
           {text}
         </motion.h4>
-        <a className="navigate">
-              <img
-                src="/images/down-arrow.png"
-                alt="arrow-dark"
-                height={80}
-                width={40}
-                className="cursor-pointer z-10 hover:scale-150 hover:brightness-100 animate-bounce hover:animate-ping"
-                style={{ filter: "brightness(0) invert(1)" }}
-              />
-            </a>
+
+        <Link
+          to={navigate}
+          spy={true}
+          smooth={true}
+          offset={50}
+          duration={500}
+          className="navigate"
+        >
+          <img
+            src="/images/down-arrow.png"
+            alt="arrow-dark"
+            height={80}
+            width={40}
+            className="cursor-pointer z-10 hover:scale-150 hover:brightness-100 animate-bounce hover:animate-ping"
+            style={{ filter: "brightness(0) invert(1)" }}
+          />
+        </Link>
       </div>
     </div>
   );

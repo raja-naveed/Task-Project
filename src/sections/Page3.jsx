@@ -2,6 +2,7 @@ import React from "react";
 import Image from "/images/zimo.png";
 import zimoblack from "/images/zimo-logo-2.png";
 import { motion } from "framer-motion";
+import { Link } from "react-scroll";
 const Page3 = () => {
   const expandAnimation = {
     hidden: { scale: 0.2, opacity: 0 },
@@ -30,11 +31,16 @@ const Page3 = () => {
           <h2 className="text-[25px] font-normal uppercase tracking-wider">
             Bringing the world closer together.
           </h2>
-          <img 
-          className="block mx-auto mt-6" src={zimoblack} alt="" 
-          />
+          <img className="block mx-auto mt-6" src={zimoblack} alt="" />
         </motion.div>
-        <a className="navigate">
+        <Link
+          to="section9"
+          spy={true}
+          smooth={true}
+          offset={50}
+          duration={500}
+          className="navigate"
+        >
           <img
             src="/images/down-arrow.png"
             alt="arrow-dark"
@@ -42,7 +48,7 @@ const Page3 = () => {
             width={40}
             className="cursor-pointer z-10 hover:scale-150 hover:brightness-100 animate-bounce hover:animate-ping"
           />
-        </a>
+        </Link>
       </div>
     </div>
   );

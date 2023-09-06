@@ -2,38 +2,56 @@ import React from "react";
 import { slideIn } from "./../utils/motion";
 import { motion } from "framer-motion";
 import { Link } from "react-scroll";
+
 export const Details = [
   {
     imageUrl: "/images/realestate.jpg",
     title: "REAL ESTATE",
+    id: "sectionn1",
+    idd: "sectionn2",
+     // Add unique IDs for each section
   },
   {
     imageUrl: "/images/car.jpg",
     title: "CARS",
+    id: "sectionn2",
+    idd: "sectionn3",
   },
   {
     imageUrl: "/images/yatch.jpg",
     title: "YATCHS",
+    id: "sectionn3",
+    idd: "sectionn4",
   },
   {
     imageUrl: "/images/watch.jpg",
     title: "WATCHES",
+    id: "sectionn4",
+    idd: "sectionn5",
   },
   {
     imageUrl: "/images/plane.jpg",
     title: "JETS",
+    id: "sectionn5",
+    idd: "sectionn6",
   },
   {
     imageUrl: "/images/island.jpg",
     title: "PRIVATE ISLANDS",
+    id: "sectionn6",
+    idd: "sectionn7",
   },
   {
     imageUrl: "/images/diamond.jpg",
     title: "DIAMONDS",
+    id: "sectionn7",
+    idd: "sectionn8",
   },
   {
     imageUrl: "/images/travel.jpg",
     title: "TRAVEL THE WORLD",
+    id: "sectionn8",
+    idd: "section6",
   },
 ];
 
@@ -42,8 +60,10 @@ const RealEstate = () => {
     <>
       {Details.map((item, index) => {
         return (
-          <div className="" id="section5">
-            <div className="relative" key={index}>
+          <div className="" id={item.id} key={index}>
+            {" "}
+            {/* Set the ID for the section */}
+            <div className="relative">
               <div
                 className="min-h-screen flex flex-col justify-center xl:text-center items-center relative px-8 bg-black bg-no-repeat bg-fixed bg-center bg-cover text-white "
                 style={{ backgroundImage: `url(${item.imageUrl})` }}
@@ -59,7 +79,7 @@ const RealEstate = () => {
                 >
                   {item.title}
                 </motion.h4>
-                {index == "1" && (
+                {index === 1 && (
                   <motion.div
                     variants={slideIn("up", 0.1)}
                     initial="hidden"
@@ -73,7 +93,7 @@ const RealEstate = () => {
                 )}
               </div>
               <Link
-                to=""
+                to={item.idd} // Set the corresponding section ID as the target
                 spy={true}
                 smooth={true}
                 offset={50}

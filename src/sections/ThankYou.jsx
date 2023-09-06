@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import { fadeIn } from "./../utils/motion";
 import Terms from "./Terms";
 import Policies from "./Policies";
+import { Link } from 'react-scroll';
 
 const ThankYou = ({ setShow }) => {
   const [isTermsOpen, setIsTermsOpen] = useState(false);
@@ -39,11 +40,12 @@ const ThankYou = ({ setShow }) => {
   ) : showPolicyPopup ? (
     <Policies closePolicyPopup={closePolicyPopup} />
   ) : (
-    <div className="section" style={{ backgroundColor: "rgba(0,0,0,0.3)" }}>
-      <div
-        id="section12"
-        className="container mx-auto flex flex-col h-screen items-center justify-center"
-      >
+    <div
+      className="section "
+      id="section12"
+      style={{ backgroundColor: "rgba(0,0,0,0.3)" }}
+    >
+      <div className="container mx-auto flex flex-col h-screen items-center justify-center">
         <div className="">
           <motion.img
             src="/images/thankyou.svg"
@@ -86,8 +88,15 @@ const ThankYou = ({ setShow }) => {
           </button>
         </div>
       </motion.div>
-      <a className="navigate">
-        <img
+      <Link
+          to="section13"
+          spy={true}
+          smooth={true}
+          offset={50}
+          duration={500}
+          className="navigate"
+        >       
+         <img
           src="/images/down-arrow.png"
           alt="arrow-dark"
           height={80}
@@ -95,7 +104,7 @@ const ThankYou = ({ setShow }) => {
           className="cursor-pointer z-10 hover:scale-150 hover:brightness-100 animate-bounce hover:animate-ping"
           style={{ filter: "brightness(0) invert(1)" }}
         />
-      </a>
+      </Link>
     </div>
   );
 };

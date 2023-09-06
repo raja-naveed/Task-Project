@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
+import { Link } from 'react-scroll';
 
 const Download = () => {
 
@@ -81,7 +82,14 @@ const Download = () => {
           ZIMO is available on many devices. The ZIMO app may come pre-installed
           or you may need to download and install it.
         </p>
-        <a className="navigate">
+        <Link
+          to="section11"
+          spy={true}
+          smooth={true}
+          offset={50}
+          duration={500}
+          className="navigate"
+        >
           <img
             src="/images/down-arrow.png"
             alt="arrow-dark"
@@ -89,7 +97,7 @@ const Download = () => {
             width={40}
             className="cursor-pointer z-10 hover:scale-150 hover:brightness-100 animate-bounce hover:animate-ping"
           />
-        </a>
+        </Link>
       </div>
     </div>
   );
